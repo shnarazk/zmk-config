@@ -63,7 +63,7 @@
                 &kp F1     &kp F2     &kp F3      &kp F4          &kp F5       &kp F6           &kp F7         &kp F8      &kp F9     &kp F10
        &hm LALT INT_RO &hm LGUI ESC &hm LSHFT C_RW &hm LCTRL C_PREV &kp C_STOP &kp C_PLAY &hm RCTRL C_NEXT &hm RSHFT C_FF &hm RGUI CAPS &hm RALT INT_KANA
                 &kp F11    &trans     &kp PG_DN   &kp PG_UP       &kp C_VOL_DN &kp C_VOL_UP     &kp HOME       &kp END     &trans     &kp F12
-                                                  &trans          &trans       &trans           &trans
+                                                  &bt BT_CLR      &trans       &trans           &bt BT_NXT
             >;
         };
 
