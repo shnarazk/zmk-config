@@ -52,7 +52,7 @@
         sym_layer {
             bindings = <
                 &kp PIPE   &kp EQUAL   &kp TILDE   &kp PLUS       &kp LT        &kp GT          &kp CARET      &kp AMPS    &kp PRCNT  &kp ASTRK
-        &hm LGUI COLON  &hm LALT LBKT  &hm LSHFT LBRC  &hm LCTRL LPAR &kp SEMI  &kp COLON       &hm RCTRL RPAR &hm RSHFT RBRC &hm RALT RBKT &hm RGUI SLASH
+        &hm LGUI BSLH  &hm LALT LBKT  &hm LSHFT LBRC  &hm LCTRL LPAR &kp SEMI  &kp COLON       &hm RCTRL RPAR &hm RSHFT RBRC &hm RALT RBKT &hm RGUI SLASH
                 &kp BSPC   &trans      &kp DOWN    &kp UP         &kp SPACE     &kp ENTER       &kp LEFT       &kp RIGHT    &trans     &trans
                                                    &kp SPACE      &mo NAV_L     &trans          &trans
             >;
