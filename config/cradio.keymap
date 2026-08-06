@@ -28,6 +28,13 @@
             quick-tap-ms = <190>;
             bindings = <&kp>, <&kp>;
         };
+        mot: mo_or_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred"; // or "balanced"/"hold-preferred"
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sk>;
+        };
     };
 
     keymap {
@@ -39,7 +46,7 @@
                 &kp MINUS  &kp Y      &kp O       &kp U          &kp Q         &kp Z            &kp L          &kp D       &kp W      &kp UNDER
                 &hm LGUI C &hm LALT I &hm LSHFT E &hm LCTRL A    &hm GLOBE G   &hm GLOBE P      &hm RCTRL H    &hm RSHFT T &hm RALT S &hm RGUI N
                 &kp BSPC   &kp X      &kp J       &kp K          &kp B         &kp V            &kp R          &kp M       &kp F      &kp TAB
-                                              &kp SPACE          &mo NUM_L     &mo SYM_L        &kp ENTER
+                                              &kp SPACE     &mot NUM_L LCTRL   &mot SYM_L RSHFT &kp ENTER
             >;
         };
 
