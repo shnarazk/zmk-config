@@ -43,26 +43,31 @@
             timeout-ms = <50>;
             key-positions = <0 20>;
             bindings = <&bt BT_SEL 0>;
+            layers = <0>;
         };
         combo_bt1 {
             timeout-ms = <50>;
             key-positions = <1 21>;
             bindings = <&bt BT_SEL 1>;
+            layers = <0>;
         };
         combo_bt2 {
             timeout-ms = <50>;
             key-positions = <2 22>;
             bindings = <&bt BT_SEL 2>;
+            layers = <0>;
         };
         combo_bt3 {
             timeout-ms = <50>;
             key-positions = <3 23>;
             bindings = <&bt BT_SEL 3>;
+            layers = <0>;
         };
         combo_btc {
             timeout-ms = <50>;
             key-positions = <4 24>;
             bindings = <&bt BT_CLR>;
+            layers = <0>;
         };
     };
 
