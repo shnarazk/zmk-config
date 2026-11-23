@@ -46,7 +46,7 @@
         };
         combo_bt1 {
             timeout-ms = <50>;
-            key-positions = <l 21>;
+            key-positions = <1 21>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_bt2 {
