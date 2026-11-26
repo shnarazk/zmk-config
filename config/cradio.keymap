@@ -79,7 +79,7 @@
             bindings = <
                 &kp MINUS  &kp Y      &kp O       &kp U          &kp Q         &kp Z            &kp N          &kp D       &kp W      &kp UNDER
                 &hm LGUI C &hm LALT I &hm LSHFT E &hm LCTRL A    &hm GLOBE G   &hm GLOBE P      &hm RCTRL H    &hm RSHFT T &hm RALT S &hm RGUI L
-                &kp BSPC   &kp X      &kp J       &kp K          &kp B         &kp V            &kp R          &kp M       &kp F      &kp TAB
+                &kp B      &kp X      &kp J       &kp K          &kp BSPC      &kp TAB          &kp R          &kp M       &kp F      &kp V
                                               &kp SPACE     &mot NUM_L LSHFT   &mot SYM_L RCTRL &kp ENTER
             >;
         };
@@ -88,7 +88,7 @@
             bindings = <
                 &kp N1     &kp N2     &kp N3      &kp N4          &kp N5        &kp N6          &kp N7         &kp N8      &kp N9     &kp N0
         &hm LGUI MINUS &hm LALT ESC &hm LSHFT GRAVE &hm LCTRL SQT &kp COMMA     &kp PERIOD &hm RCTRL DQT &hm RSHFT HASH &hm RALT DOLLAR &hm RGUI AT
-                &kp BSPC   &kp LANG1  &trans      &kp QMARK       &kp SPACE     &kp DEL         &kp EXCL       &trans      &kp LANG2  &kp TAB
+                &kp SPACE  &kp LANG1  &none       &kp QMARK       &kp BSPC      &kp TAB         &kp EXCL       &none       &kp LANG2  &kp DEL
                                                   &trans          &trans        &mo NAV_L       &kp ENTER
             >;
         };
@@ -97,7 +97,7 @@
             bindings = <
                 &kp PIPE   &kp EQUAL   &kp TILDE   &kp PLUS       &kp LT        &kp GT          &kp CARET      &kp AMPS    &kp PRCNT  &kp ASTRK
         &hm LGUI BSLH &hm LALT LBKT &hm LSHFT LBRC &hm LCTRL LPAR &kp SEMI      &kp COLON       &hm RCTRL RPAR &hm RSHFT RBRC &hm RALT RBKT &hm RGUI SLASH
-                &kp BSPC   &trans      &kp DOWN    &kp UP         &kp HOME      &kp END         &kp LEFT       &kp RIGHT   &trans     &kp TAB
+                &kp ENTER  &kp HOME    &kp DOWN    &kp UP         &kp BSPC      &kp TAB         &kp LEFT       &kp RIGHT   &kp END    &kp DEL
                                                    &kp SPACE      &mo NAV_L     &trans          &trans
             >;
         };
@@ -105,8 +105,8 @@
         nav_layer {
             bindings = <
                 &kp F1     &kp F2     &kp F3      &kp F4          &kp F5       &kp F6           &kp F7         &kp F8      &kp F9     &kp F10
-                &none      &none      &kp C_RW    &kp C_PREV      &kp C_STOP   &kp C_PLAY       &kp C_NEXT     &kp C_FF    &kp CAPS   &none
-                &kp F11    &trans     &kp PG_DN   &kp C_BRI_DN    &kp C_VOL_DN &kp C_VOL_UP     &kp C_BRI_UP   &kp PG_UP   &trans     &kp F12
+                &kp F11    &kp C_RW   &kp C_PREV  &kp C_STOP      &none        &none            &kp C_PLAY     &kp C_NEXT  &kp C_FF   &kp F12
+                &none      &none      &kp C_BRI_DN &kp C_VOL_DN   &none        &none            &kp C_VOL_UP   &kp C_BRI_UP &none     &none
                                                   &none           &trans       &trans           &none
             >;
         };
