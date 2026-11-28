@@ -18,25 +18,6 @@
 &lt { quick-tap-ms = <200>; };
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <120>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <190>;
-            bindings = <&kp>, <&kp>;
-        };
-        mot: mo_or_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred"; // or "balanced"/"hold-preferred"
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&sk>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
         combo_bt0 {
@@ -78,16 +59,16 @@
         default_layer {
             bindings = <
                 &kp MINUS  &kp Y      &kp O       &kp U          &kp Q         &kp Z            &kp R          &kp D       &kp W      &kp UNDER
-                &hm LGUI C &hm LALT I &hm LSHFT E &hm LCTRL A    &hm GLOBE G   &hm GLOBE P      &hm RCTRL N    &hm RSHFT T &hm RALT S &hm RGUI M
+                &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A    &mt GLOBE G   &mt GLOBE P      &mt RCTRL N    &mt RSHFT T &mt RALT S &mt RGUI M
                 &kp B      &kp X      &kp J       &kp K          &kp BSPC      &kp TAB          &kp H          &kp L       &kp F      &kp V
-                                              &kp SPACE     &mot NUM_L LSHFT   &mot SYM_L RCTRL &kp ENTER
+                                                  &mt LSHFT SPACE &mo NUM_L    &mo SYM_L        &mt RCTRL ENTER
             >;
         };
 
         num_layer {
             bindings = <
                 &kp N1     &kp N2     &kp N3      &kp N4          &kp N5        &kp N6          &kp N7         &kp N8      &kp N9     &kp N0
-        &hm LGUI MINUS &hm LALT ESC &hm LSHFT GRAVE &hm LCTRL SQT &kp COMMA     &kp PERIOD &hm RCTRL DQT &hm RSHFT HASH &hm RALT DOLLAR &hm RGUI AT
+        &mt LGUI MINUS &mt LALT ESC &mt LSHFT GRAVE &mt LCTRL SQT &kp COMMA     &kp PERIOD      &mt RCTRL DQT  &mt RSHFT HASH &mt RALT DOLLAR &mt RGUI AT
                 &kp SPACE  &kp LANG1  &none       &kp QMARK       &kp BSPC      &kp TAB         &kp EXCL       &none       &kp LANG2  &kp DEL
                                                   &trans          &trans        &mo NAV_L       &kp ENTER
             >;
@@ -96,7 +77,7 @@
         sym_layer {
             bindings = <
                 &kp PIPE   &kp EQUAL   &kp TILDE   &kp PLUS       &kp LT        &kp GT          &kp CARET      &kp AMPS    &kp PRCNT  &kp ASTRK
-        &hm LGUI BSLH &hm LALT LBKT &hm LSHFT LBRC &hm LCTRL LPAR &kp SEMI      &kp COLON       &hm RCTRL RPAR &hm RSHFT RBRC &hm RALT RBKT &hm RGUI SLASH
+        &mt LGUI BSLH &mt LALT LBKT &mt LSHFT LBRC &mt LCTRL LPAR &kp SEMI      &kp COLON       &mt RCTRL RPAR &mt RSHFT RBRC &mt RALT RBKT &mt RGUI SLASH
                 &kp ENTER  &kp HOME    &kp DOWN    &kp UP         &kp BSPC      &kp TAB         &kp LEFT       &kp RIGHT   &kp END    &kp DEL
                                                    &kp SPACE      &mo NAV_L     &trans          &trans
             >;
