@@ -58,9 +58,9 @@
 
         default_layer {
             bindings = <
-                &kp MINUS  &kp Y      &kp O       &kp U          &kp Q         &kp Z            &kp R          &kp D       &kp W      &kp UNDER
+                &kp MINUS  &kp Y      &kp O       &kp U          &kp B         &kp V            &kp R          &kp D       &kp W      &kp UNDER
                 &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A    &mt GLOBE G   &mt GLOBE P      &mt RCTRL N    &mt RSHFT T &mt RALT S &mt RGUI M
-                &kp B      &kp X      &kp J       &kp K          &kp BSPC      &kp TAB          &kp H          &kp L       &kp F      &kp V
+                &kp Z      &kp X      &kp J       &kp K          &kp BSPC      &kp TAB          &kp H          &kp L       &kp F      &kp Q
                                                   &mt LSHFT SPACE &mo NUM_L    &mo SYM_L        &mt RCTRL ENTER
             >;
         };
